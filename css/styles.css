@@ -1,0 +1,66 @@
+.mega-menu {
+  width: 800px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.carousel {
+  background-color: #99ffbb;
+}
+
+.banner-img {
+  padding: 0;
+}
+
+#banner{
+  width: 100%;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 50%;
+  height: 250px !important;
+  margin-left: 25%;
+}
+
+.img1{
+  height: 20px;
+  width: 20px;
+}
+
+nav {
+  background: #f2f2f2;
+}
+
+.footer {
+  margin: 2%;  
+}
+
+.fa {
+  padding: 20px;
+  font-size: 10px;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-youtube {
+  background: red;
+  color: white;
+}
