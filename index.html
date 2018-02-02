@@ -3,6 +3,7 @@
 <head>
   <title>Treks in Bangalore</title>
   <meta charset="utf-8">
+  <meta name="author" content="garima chaudhary">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,10 +14,11 @@
  </head>
 <body>
 
-  <div class="container-fluid myclass">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-
+        
+        <!-- Collapsible Navigation Bar --> 
         <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
           <a class="navbar-brand" href="#">Home</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -32,9 +34,11 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Gallery</a>
-              </li>  
+              </li> 
+              <!-- Big Menu inside Nav bar --> 
               <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More<span class="caret">
+                </span></a>
                 <div class="dropdown-menu mega-menu">
                   <div class="row">
                     <ul class="list-unstyled col-lg-3 col-sm-6" role="menu">
@@ -56,7 +60,7 @@
                             <input class="form-control" id="inputPassword1" placeholder="Password" type="password" style="margin-bottom:.5em">
                             <div class="checkbox">
                               <label class="small">
-                                <input type="checkbox"> remember me</label>
+                                <input type="checkbox">remember me</label>
                             </div>
                             <hr>
                             <input class="btn btn-primary btn-block" type="submit" name="commit" value="Sign In">
@@ -74,9 +78,6 @@
                       <li><a href="#">Walking and Biking</a></li>
                       <li class="divider"></li>
                       <li><a href="#" class="btn btn-primary pull-right">Book</a></li>
-                      <li>
-                        <p class="small text-muted"></p>
-                      </li>
                     </ul>
                     <ul class="list-unstyled col-lg-3 col-sm-6" role="menu">
                       <li><h4>HomeStays</h4></li>
@@ -93,42 +94,62 @@
           </div>  
         </nav>
 
-      <div class="container-fluid banner-img">
-        <img src="img/banner.jpg" alt="banner" id="banner"> 
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-2">
-            <a href="#">Get Stamped</a>
-          </div>
-          <div class="col-sm-2">
-            <a href="#">Explore the best of Karnataka</a>
-          </div>
-          <div class="col-sm-2">
-            <a href="#">Experiential Winter Treks</a>
-          </div>
-          <div class="col-sm-2">
-            <a href="#">Adventurous Corporate Outings</a>
-          </div>
-          <div class="col-sm-2">
-            <a href="#">Traverse the Coastal ghats</a>
-          </div>
-          <div class="col-sm-2">
-            <a href="#">Sites for Stargazing</a>
+      <!-- Full width column -->
+      <section>
+        <div class="container-fluid text-center banner-img">
+          <img src="img/banner.jpg" alt="banner" id="banner"> 
+          <div class="caption">
+            <p><strong>Be There. Do That.</strong></p>
           </div>
         </div>
-      </div>
+      </section>
 
+      <!-- Columns to be vertically stacked on small screens -->
+      <section>
+        <div class="container to-do">
+          <div class="row">
+            <article>
+              <div class="col-sm-2">
+                <a href="#">Get Stamped</a>
+              </div>
+            </article>
+            <article>
+              <div class="col-sm-2">
+                <a href="#">Explore the best of Karnataka</a>
+              </div>
+            </article>
+            <article>
+              <div class="col-sm-2">
+                <a href="#">Experiential Winter Treks</a>
+              </div>
+            </article>
+            <article>
+              <div class="col-sm-2">
+                <a href="#">Adventurous Corporate Outings</a>
+              </div>
+            </article>
+            <article>
+              <div class="col-sm-2">
+                <a href="#">Traverse the Coastal ghats</a>
+              </div>
+            </article>
+            <article>
+              <div class="col-sm-2">
+                <a href="#">Sites for Stargazing</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Carousel -->
       <div id="slider" class="carousel slide" data-ride="carousel">
-
         <!-- Indicators -->
         <ul class="carousel-indicators">
           <li data-target="#slider" data-slide-to="0" class="active"></li>
           <li data-target="#slider" data-slide-to="1"></li>
           <li data-target="#slider" data-slide-to="2"></li>
-        </ul>
-        
+        </ul>   
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -141,7 +162,6 @@
             <img class="carousel-img" src="img/mullayanagiri.jpeg" alt="Mullayanagiri trek">
           </div>
         </div>
-        
         <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#slider" data-slide="prev">
           <span class="carousel-control-prev-icon"></span>
@@ -150,12 +170,15 @@
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
+      <!-- /Carousel -->
 
+      <!-- Footer with social media links -->
       <footer class="footer">
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-youtube"></a>
         <a href="#" class="fa fa-twitter"></a>
       </footer>
+      <!-- /Footer -->
         
   </div>
 </div>
